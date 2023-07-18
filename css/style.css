@@ -1,0 +1,1328 @@
+#join {
+  margin-top: 500px;
+  margin: 120px auto;
+}
+#join .inner .join__1st {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#join .inner .join__1st .join__title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+#join .inner .join__1st .join__title h4 {
+  font: 800 30px/1 "Nanum Gothic";
+}
+#join .inner .join__1st .inputboxs {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+#join .inner .join__1st .inputboxs label p {
+  font: bold 14px/1 "Nanum Gothic";
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+#join .inner .join__1st .inputboxs label input {
+  width: 450px;
+  padding: 10px;
+  font: normal 12px/1 "Nanum Gothic";
+  color: #bbb;
+  background-color: #fff3eb;
+  border-radius: 5px;
+  border: none;
+}
+#join .inner .join__1st .inputboxs label .wrong__pw__input {
+  border: 1px solid red;
+}
+#join .inner .join__1st .inputboxs label .wrong__pw {
+  color: red;
+  font: normal 11px/1 "Nanum Gothic";
+  margin-top: 7px;
+}
+#join .join__2nd {
+  background-color: #f2f2f2;
+  margin-bottom: 100px;
+}
+#join .join__2nd .terms {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 50px 750px;
+}
+#join .join__2nd .terms h5 {
+  font: bold 16px/1 "Nanum Gothic";
+  margin-bottom: 30px;
+}
+#join .join__2nd .terms .checkboxs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#join .join__2nd .terms .checkboxs label {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+#join .join__2nd .terms .checkboxs label p {
+  font: normal 14px/1 "Nanum Gothic";
+  margin-left: 10px;
+}
+#join .join__2nd .terms .checkboxs label p span {
+  text-decoration: underline;
+  font: bold 14px/1 "Nanum Gothic";
+}
+#join .join__2nd .terms .checkboxs label .agree {
+  font: bold 14px/1 "Nanum Gothic";
+}
+#join .join__2nd .terms .checkboxs label input {
+  font: normal 12px/1 "Nanum Gothic";
+  color: #bbb;
+  border-radius: 50px;
+  border: 1px solid #333;
+}
+#join .join__2nd .terms .checkboxs .all__agreed {
+  margin-left: 0px;
+}
+#join .button {
+  margin: 0 auto;
+}
+#join .button .inner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#join .button .inner a button {
+  width: 450px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font: bold 15px/1 "Nanum Gothic";
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.joinConfirm_wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joinConfirm_wrap .inner {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 100px;
+  width: 50%;
+}
+.joinConfirm_wrap .inner .txt01 {
+  font: 600 20px/1.3 "Nanum Gothic";
+}
+.joinConfirm_wrap .inner .txt02 {
+  font: 500 15px/2 "Nanum Gothic";
+  text-align: center;
+}
+.joinConfirm_wrap .inner .loginbox {
+  padding: 50px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.joinConfirm_wrap .inner .loginbox p {
+  font: 800 18px/1.7 "Nanum Gothic";
+  letter-spacing: 1px;
+}
+.joinConfirm_wrap .inner .txt03 a button {
+  width: 180px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font: 400 13px/1.3 "Nanum Gothic";
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.joinConfirm_wrap .inner .txt03 a button:hover {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.joinConfirm_wrap .inner .txt03 a .go__to__main {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.joinConfirm_wrap .inner .txt03 a .go__to__main:hover {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+}
+.joinConfirm_wrap .inner .txt03 a:first-child {
+  margin-right: 30px;
+}
+
+#login {
+  margin-top: 500px;
+  margin: 120px auto;
+  margin-bottom: 0px;
+  background-color: #fedbc5;
+  padding: 100px 0px;
+}
+#login .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+#login .inner .login__title {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+#login .inner .login__title h4 {
+  font: bold 30px/1 "Nanum Gothic";
+}
+#login .inner .login__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#login .inner .login__input label input {
+  width: 400px;
+  padding: 10px;
+  font: normal 12px/1 "Nanum Gothic";
+  color: #bbb;
+  border-radius: 5px;
+  border: none;
+  background: #fff3eb;
+}
+#login .inner .login__input label p {
+  font: bold 14px/1 "Nanum Gothic";
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+#login .inner .login__input .input__pw {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#login .inner .login__input .input__pw .wrong__pw {
+  color: red;
+  font: normal 11px/1 "Nanum Gothic";
+  margin-top: 7px;
+}
+#login .inner .login__button {
+  margin-top: 50px;
+}
+#login .inner .login__button .inner {
+  width: 400px;
+}
+#login .inner .login__button .inner button {
+  width: 400px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font: 400 13px/1.3 "Nanum Gothic";
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#login .inner .login__button .inner button:hover {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+#login .inner .join__button {
+  margin-top: 10px;
+}
+#login .inner .join__button .inner {
+  width: 400px;
+}
+#login .inner .join__button .inner button {
+  width: 400px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+  font: 400 13px/1.3 "Nanum Gothic";
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+#login .inner .join__button .inner button:hover {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+}
+#login .inner .join__button .inner .button__white {
+  background-color: #fff;
+  border: 1px solid #444;
+  color: #444;
+}
+#login .inner .join__button .inner .button__white:hover {
+  background-color: #444;
+  border: 1px solid #fff;
+  color: #fff;
+}
+#login .inner .login__txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: normal 14px/1 "Nanum Gothic";
+  width: 400px;
+  padding: 0px 10px;
+  margin-top: 0px;
+  margin-bottom: 70px;
+}
+#login .inner .login__txt .stay__login {
+  display: flex;
+  align-items: center;
+}
+#login .inner .login__txt .stay__login label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+#login .inner .login__txt .stay__login label input[type=checkbox] {
+  appearance: none;
+  position: relative;
+  border: max(2px, 0.1em) solid var(--primary-color);
+  border-radius: 1.25em;
+  width: 2.25em;
+  height: 1.25em;
+}
+#login .inner .login__txt .stay__login label input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  transform: scale(0.8);
+  background-color: var(--primary-color);
+  transition: left 250ms linear;
+}
+#login .inner .login__txt .stay__login label input[type=checkbox]:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+#login .inner .login__txt .stay__login label input[type=checkbox]:checked::before {
+  background-color: white;
+  left: 1em;
+}
+#login .inner .sns__txt {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  flex-direction: column;
+}
+#login .inner .sns__txt span {
+  font: normal 16px/1 "Nanum Gothic";
+  margin-bottom: 30px;
+}
+#login .inner .sns__txt .sns__img {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  cursor: pointer;
+}
+#login .box-shadow {
+  box-shadow: 0px 8.7288131714px 8.7288131714px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 700px;
+}
+
+.findPw_wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  margin-bottom: 0px;
+  background-color: #fedbc5;
+  padding: 80px 0px;
+}
+.findPw_wrap .inner {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 100px;
+  width: 50%;
+}
+.findPw_wrap .inner .txt01 {
+  font: 600 20px/1.3 "Nanum Gothic";
+}
+.findPw_wrap .inner .txt02 {
+  font: 500 15px/2 "Nanum Gothic";
+  text-align: center;
+}
+.findPw_wrap .inner .txt03 input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font: normal 12px/1 "Nanum Gothic";
+  color: #bbb;
+  border-radius: 5px;
+  border: none;
+  background: #fff3eb;
+}
+.findPw_wrap .inner .txt03 a button {
+  width: 130px;
+  height: 40px;
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font: 400 13px/1.3 "Nanum Gothic";
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.findPw_wrap .inner .txt03 a button:hover {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.findPw_wrap .inner .txt03 a:first-child {
+  margin-right: 30px;
+}
+.findPw_wrap .box-shadow {
+  box-shadow: 0px 8.7288131714px 8.7288131714px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  width: 700px;
+}
+
+.txt04 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7) fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt04 .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+.txt04 .inner h4 {
+  width: 500px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 200px;
+  font: 800 18px/2 "Nanum Gothic";
+}
+.txt04 .inner h5 {
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  text-align: center;
+  padding: 45px;
+  font: 500 18px/2 "Nanum Gothic";
+}
+.txt04 .inner h5 a {
+  display: block;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border-top: none;
+  width: 120px;
+  color: #fff;
+  padding: 5px 0px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font: 500 16px/2 "Nanum Gothic";
+}
+
+.txt05 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7) fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt05 .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+.txt05 .inner h4 {
+  width: 500px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 200px;
+  font: 800 18px/2 "Nanum Gothic";
+}
+.txt05 .inner h5 {
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  text-align: center;
+  padding: 45px;
+  font: 500 18px/2 "Nanum Gothic";
+}
+.txt05 .inner h5 a {
+  display: block;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border-top: none;
+  width: 120px;
+  color: #fff;
+  padding: 5px 0px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font: 500 16px/2 "Nanum Gothic";
+}
+
+.changePw_wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  margin-bottom: 0px;
+  background-color: #fedbc5;
+  padding: 150px 0px 80px;
+}
+.changePw_wrap .inner {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 100px;
+  width: 50%;
+}
+.changePw_wrap .inner .txt01 {
+  font: 600 20px/1.3 "Nanum Gothic";
+}
+.changePw_wrap .inner .txt02 {
+  font: 500 15px/2 "Nanum Gothic";
+  text-align: center;
+}
+.changePw_wrap .inner .txt02 p span {
+  text-decoration: underline;
+  font: 600 15px/2 "Nanum Gothic";
+  color: var(--primary-color);
+}
+.changePw_wrap .inner .txt03 label p {
+  font: bold 14px/1 "Nanum Gothic";
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.changePw_wrap .inner .txt03 label input {
+  width: 300px;
+  padding: 10px;
+  font: normal 12px/1 "Nanum Gothic";
+  color: #bbb;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  background-color: #FFF3EB;
+  margin-bottom: 30px;
+}
+.changePw_wrap .inner .txt03 a {
+  display: flex;
+  margin-top: 20px;
+}
+.changePw_wrap .inner .txt03 a button {
+  width: 300px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font: 400 13px/1.3 "Nanum Gothic";
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.changePw_wrap .inner .txt03 a button:hover {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.changePw_wrap .inner .txt03 a:first-child {
+  margin-right: 30px;
+}
+.changePw_wrap .inner .txt04 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7) fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.changePw_wrap .inner .txt04 .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  background-color: transparent;
+}
+.changePw_wrap .inner .txt04 .inner h4 {
+  width: 500px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 200px;
+}
+.changePw_wrap .inner .txt04 .inner h5 {
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  text-align: center;
+  padding: 35px;
+  font: 500 16px/2 "Nanum Gothic";
+}
+.changePw_wrap .inner .txt04 .inner h5 a {
+  display: block;
+  border: 1px solid #444;
+  background-color: #444;
+  border-radius: 20px;
+  border-top: none;
+  width: 120px;
+  color: #fff;
+  padding: 5px 0px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font: 500 14px/2 "Nanum Gothic";
+  transition: all 0.3s;
+}
+.changePw_wrap .inner .txt04 .inner h5 a:hover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+.changePw_wrap .box-shadow {
+  box-shadow: 0px 8.7288131714px 8.7288131714px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  width: 700px;
+}
+
+#detail {
+  margin-top: 120px;
+}
+#detail .detail__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 80px 0px;
+}
+#detail .detail__inner .box01 {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+#detail .detail__inner .box01 .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+#detail .detail__inner .box01 .left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+#detail .detail__inner .box01 .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#detail .detail__inner .box01 .right .right__txt01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#detail .detail__inner .box01 .right .right__txt01 h2 {
+  font: 800 25px/1 "Nanum Gothic";
+}
+#detail .detail__inner .box01 .right .right__txt01 span {
+  color: red;
+  font-size: 30px;
+}
+#detail .detail__inner .box01 .right .right__txt02 {
+  margin-top: 50px;
+}
+#detail .detail__inner .box01 .right .right__txt02 .right__txt02__01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#detail .detail__inner .box01 .right .right__txt02 .right__txt02__01 span {
+  color: var(--primary-color);
+  font: 800 20px/1 "Nanum Gothic";
+}
+#detail .detail__inner .box01 .right .right__txt02 .right__txt02__01 p span {
+  color: #333;
+  font: 800 20px/1 "Nanum Gothic";
+}
+#detail .detail__inner .box01 .right .right__txt02 .right__txt02__01 p span:first-child {
+  text-decoration: line-through;
+  font: 600 14px/1 "Nanum Gothic";
+  margin-right: 10px;
+}
+#detail .detail__inner .box01 .right .right__txt02 .right__txt02__02 {
+  margin-top: 20px;
+}
+#detail .detail__inner .box01 .right .right__txt02 .right__txt02__02 p {
+  color: #333;
+  font: 600 16px/1 "Nanum Gothic";
+}
+#detail .detail__inner .box01 .right .right__txt02 .right__txt02__02 p .free {
+  color: #bbb;
+  font: 400 13px/1 "Nanum Gothic";
+  margin-left: 3px;
+}
+#detail .detail__inner .box01 .right .right__txt03 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  height: 170px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#detail .detail__inner .box01 .right .right__txt03 .cart {
+  position: relative;
+  top: 0px;
+  right: -450px;
+  width: 87px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#detail .detail__inner .box01 .right .right__txt03 .cart .inner {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+#detail .detail__inner .box01 .right .right__txt03 .cart .inner button {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #333;
+  color: #333;
+  font: bold 14px/1 "Nanum Gothic";
+  text-align: center;
+  cursor: pointer;
+}
+#detail .detail__inner .box01 .right .right__txt03 .cart .inner button:first-child {
+  background-color: transparent;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#detail .detail__inner .box01 .right .right__txt03 .cart .inner button:last-child {
+  background-color: transparent;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#detail .detail__inner .box01 .right .right__txt03 .cart .inner input {
+  width: 35px;
+  height: 25px;
+  border: none;
+  text-align: center;
+  font: 800 14px/1 "Nanum Gothic";
+  color: #252525;
+  background-color: transparent;
+  border: 1px solid #333;
+}
+#detail .detail__inner .box01 .right .right__txt03 .cart span {
+  font: 400 12px/1 "Nanum Gothic";
+  margin-top: 7px;
+}
+#detail .detail__inner .box01 .right .right__txt03 .right__txt03__01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: var(--primary-color);
+  font: 600 18px/1 "Nanum Gothic";
+}
+#detail .detail__inner .box01 .right .right__txt03 .right__txt03__01 span:nth-of-type(2) {
+  font: 800 25px/1 "Nanum Gothic";
+}
+#detail .detail__inner .box01 .right .right__txt03 .right__txt03__02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #333;
+  font: 600 16px/1 "Nanum Gothic";
+}
+#detail .detail__inner .box01 .right .right__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#detail .detail__inner .box01 .right .right__buttons button {
+  border: none;
+  cursor: pointer;
+  height: 70px;
+  width: 580px;
+  padding: 20px;
+  font: 600 20px/1 "Nanum Gothic";
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+#detail .detail__inner .box01 .right .right__buttons button:last-child {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+#detail .detail__inner .box01 .right .right__buttons button:last-child:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+#detail .detail__inner .box01 .right .right__modal .inner h4 {
+  width: 500px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 200px;
+}
+#detail .detail__inner .box01 .right .right__modal .inner h5 .buttons {
+  display: flex;
+  align-items: center;
+}
+#detail .detail__inner .box01 .right .right__modal .inner h5 .buttons a {
+  width: 180px;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#detail .detail__inner .box01 .right .right__modal .inner h5 .buttons a button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  font: 500 16px/2 "Nanum Gothic";
+  cursor: pointer;
+}
+#detail .detail__inner .box02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+#detail .detail__inner .box02 a {
+  margin-right: 3px;
+  width: 100%;
+  height: 100%;
+}
+#detail .detail__inner .box02 a .detailed__info,
+#detail .detail__inner .box02 a .review,
+#detail .detail__inner .box02 a .question {
+  text-align: center;
+  font: 700 18px/50px "Nanum Gothic";
+  color: #fff;
+  letter-spacing: 1px;
+}
+#detail .detail__inner .box02 a .detailed__info {
+  background-color: var(--primary-color);
+}
+#detail .detail__inner .box02 a .review,
+#detail .detail__inner .box02 a .question {
+  background-color: #f0f0f0;
+  color: #6c6c6c;
+}
+#detail .detail__inner .box02 a .question {
+  margin-right: 0px;
+}
+
+:root {
+  --primary-color: #ff7d04;
+  --border-radius: 15px;
+}
+
+/*COMMON*/
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  display: block;
+}
+
+/*INNER*/
+.inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff !important;
+  z-index: 1;
+  border-bottom: 2px solid #bbb;
+}
+header .inner {
+  height: 120px;
+}
+header .inner .logo {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .inner .logo img {
+  height: 70px;
+}
+header .inner .sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+header .inner .sub-menu ul {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+header .inner .sub-menu ul li {
+  position: relative;
+}
+header .inner .sub-menu ul li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .inner .sub-menu ul li:first-child::before {
+  display: none;
+}
+header .inner .sub-menu ul li a {
+  font-size: 12px;
+  color: #656565;
+  padding: 11px 16px;
+  display: block;
+}
+header .inner .sub-menu ul li a:hover {
+  color: #000;
+}
+header .inner .main-menu {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+header .inner .main-menu .item {
+  color: #111;
+}
+header .inner .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font: normal 14px/1 "Nanum Gothic";
+}
+header .inner .main-menu .item .item__name a {
+  color: #111;
+}
+header .inner .main-menu .item:hover .item__name {
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+}
+header .inner .main-menu .item:last-child {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  height: 35px;
+  margin-left: 30px;
+}
+header .inner .main-menu .item .red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+}
+header .inner .main-menu .item .red .material-icons {
+  margin-left: 10px;
+}
+
+#visual {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #f6f5f0;
+  margin-top: 120px;
+}
+#visual .promotion {
+  width: 100%;
+  position: relative;
+  transition: height 0.4s;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#visual .promotion .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+#visual .promotion .swiper-button-prev {
+  margin: 0px 360px;
+}
+#visual .promotion .swiper-button-next {
+  margin: 0px 350px;
+}
+#visual .promotion .swiper-button-next,
+#visual .promotion .swiper-button-prev,
+#visual .promotion .swiper-pagination {
+  color: #fff;
+}
+
+#search {
+  margin-top: 50px;
+}
+#search .inner {
+  display: flex;
+  flex-direction: column;
+}
+#search .inner input {
+  width: 70%;
+  height: 50px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+#search .inner .material-icons {
+  font-size: 25px;
+  position: absolute;
+  right: 200px;
+  top: 12px;
+  cursor: pointer;
+}
+#search .inner .buttons {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#search .inner .buttons button {
+  padding: 5px 20px;
+  height: 35px;
+  display: inline-block;
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  margin-right: 20px;
+  background-color: #fff;
+  color: var(--primary-color);
+  font: normal 13px/1 "Nanum Gothic";
+  cursor: pointer;
+}
+
+#products {
+  width: 100%;
+  margin-bottom: 100px;
+}
+#products .inner {
+  display: flex;
+  gap: 60px;
+}
+#products .inner .left {
+  width: 90%;
+}
+#products .inner .left ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#products .inner .left ul li {
+  width: 30%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#products .inner .left ul li a img {
+  width: 100%;
+  height: 220px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+}
+#products .inner .left ul li .icons {
+  position: relative;
+  top: -210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 0px;
+}
+#products .inner .left ul li .icons .red__heart {
+  color: red;
+}
+#products .inner .left ul li .txt {
+  margin-top: -15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  font: 600 16px/1 "Nanum Gothic";
+}
+#products .inner .left ul li .txt .price {
+  font: 800 16px/1 "Nanum Gothic";
+}
+#products .inner .left ul .cart__click a img {
+  filter: brightness(0.3);
+}
+#products .inner .left ul .cart__click .icons a {
+  background-color: transparent;
+}
+#products .inner .left ul .cart__click .cart {
+  position: relative;
+}
+#products .inner .left ul .cart__click .cart .inner {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  top: -165px;
+  left: 100px;
+}
+#products .inner .left ul .cart__click .cart .inner button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font: bold 14px/1 "Nanum Gothic";
+  text-align: center;
+  cursor: pointer;
+}
+#products .inner .left ul .cart__click .cart .inner button:first-child {
+  background-color: #949494;
+}
+#products .inner .left ul .cart__click .cart .inner button:last-child {
+  background-color: #252525;
+}
+#products .inner .left ul .cart__click .cart .inner input {
+  width: 25px;
+  height: 25px;
+  border: none;
+  text-align: center;
+  font: bold 14px/1 "Nanum Gothic";
+  color: #252525;
+}
+#products .inner .right {
+  width: 10%;
+}
+#products .inner .right ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-radius: var(--border-radius);
+}
+#products .inner .right ul li {
+  background-color: var(--primary-color);
+}
+#products .inner .right ul li:first-child {
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+#products .inner .right ul li:last-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+#products .inner .right ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+}
+#products .inner .right ul li a p {
+  font: bold 14px/1 "Nanum Gothic";
+  margin-top: 10px;
+}
+#products .inner .right ul li a span {
+  font-size: 40px;
+}
+#products .inner .right ul li .line {
+  background-color: #fff;
+  opacity: 0.7;
+  width: 90px;
+  height: 1px;
+  margin: 0 auto;
+}
+#products .inner .right ul .right__cart,
+#products .inner .right ul .right__favorite {
+  position: relative;
+}
+#products .inner .right ul .right__cart a .cart__count,
+#products .inner .right ul .right__cart a .favorite__count,
+#products .inner .right ul .right__favorite a .cart__count,
+#products .inner .right ul .right__favorite a .favorite__count {
+  position: absolute;
+  top: 27px;
+  right: 35px;
+  background-color: #ff1b1b;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font: normal 13px/20px "Nanum Gothic";
+}
+#products .inner .right ul .right__cart {
+  margin-bottom: -10px;
+}
+#products .inner .right ul .last a {
+  padding: 20px 10px;
+}
+#products .inner .right ul .last a span {
+  margin: 10px 0px 0px;
+  font-size: 27px;
+}
+#products .inner .right ul .last a p {
+  margin-bottom: 20px;
+}
+#products .inner .right ul .last a p:last-child {
+  margin-bottom: 10px;
+}
+#products .inner .right ul .last a img {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+#products .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#products .pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 13px/1 "Nanum Gothic";
+  color: #333;
+  transition: 0.3s;
+  padding: 5px;
+}
+#products .pagination a:hover {
+  color: #111;
+  font-weight: bold;
+}
+#products .pagination a span {
+  margin: 0 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+}
+#products .pagination a .bold {
+  margin: 0px;
+  background-color: transparent;
+  border-radius: none;
+  color: var(--primary-color);
+  font: 800 13px/1 "Nanum Gothic";
+}
+#products .pagination .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

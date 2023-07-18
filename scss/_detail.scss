@@ -1,0 +1,292 @@
+#detail {
+	margin-top: 120px;
+
+	.detail__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 100px;
+		padding: 80px 0px;
+
+		.box01 {
+			display: flex;
+			justify-content: space-between;
+			gap: 50px;
+			width: 100%;
+
+			.left {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 50%;
+
+				img {
+					width: 100%;
+					height: 100%;
+					border-radius: 20px;
+				}
+			}
+
+			.right {
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+
+				.right__txt01 {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					h2 {
+						font: 800 25px/1 "Nanum Gothic";
+					}
+
+					span {
+						color: red;
+						font-size: 30px;
+					}
+				}
+
+				.right__txt02 {
+					margin-top: 50px;
+
+					.right__txt02__01 {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						span {
+							color: var(--primary-color);
+							font: 800 20px/1 "Nanum Gothic";
+						}
+
+						p {
+							span {
+								color: #333;
+								font: 800 20px/1 "Nanum Gothic";
+
+								&:first-child {
+									text-decoration: line-through;
+									font: 600 14px/1 "Nanum Gothic";
+									margin-right: 10px;
+								}
+							}
+						}
+					}
+
+					.right__txt02__02 {
+						margin-top: 20px;
+
+						p {
+							color: #333;
+							font: 600 16px/1 "Nanum Gothic";
+
+							.free {
+								color: #bbb;
+								font: 400 13px/1 "Nanum Gothic";
+								margin-left: 3px;
+							}
+						}
+					}
+				}
+
+				.right__txt03 {
+					margin-top: 50px;
+					margin-bottom: 20px;
+					background-color: #f0f0f0;
+					height: 170px;
+					border-radius: 15px;
+					padding: 20px;
+					display: flex;
+					flex-direction: column;
+
+					.cart {
+						position: relative;
+						top: 0px;
+						right: -450px;
+						width: 87px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+
+						.inner {
+							width: 100px;
+							display: flex;
+							align-items: center;
+							gap: 0px;
+							background-color: transparent;
+							border-radius: 5px;
+
+							button {
+								width: 25px;
+								height: 25px;
+								border: 1px solid #333;
+								color: #333;
+								font: bold 14px/1 "Nanum Gothic";
+								text-align: center;
+								cursor: pointer;
+
+								&:first-child {
+									background-color: transparent;
+									border-top-left-radius: 3px;
+									border-bottom-left-radius: 3px;
+								}
+
+								&:last-child {
+									background-color: transparent;
+									border-top-right-radius: 3px;
+									border-bottom-right-radius: 3px;
+								}
+							}
+
+							input {
+								width: 35px;
+								height: 25px;
+								border: none;
+								text-align: center;
+								font: 800 14px/1 "Nanum Gothic";
+								color: #252525;
+								background-color: transparent;
+								border: 1px solid #333;
+							}
+						}
+
+						span {
+							font: 400 12px/1 "Nanum Gothic";
+							margin-top: 7px;
+						}
+					}
+
+					.right__txt03__01 {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-top: 20px;
+						color: var(--primary-color);
+						font: 600 18px/1 "Nanum Gothic";
+
+						span {
+							&:nth-of-type(2) {
+								font: 800 25px/1 "Nanum Gothic";
+							}
+						}
+					}
+
+					.right__txt03__02 {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-top: 20px;
+						color: #333;
+						font: 600 16px/1 "Nanum Gothic";
+					}
+				}
+
+				.right__buttons {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-top: 20px;
+
+					button {
+						border: none;
+						cursor: pointer;
+						height: 70px;
+						width: 580px;
+						padding: 20px;
+						font: 600 20px/1 "Nanum Gothic";
+						letter-spacing: 1px;
+						border-radius: 10px;
+
+						&:last-child {
+							background-color: var(--primary-color);
+							color: #fff;
+							margin-top: 10px;
+							transition: all 0.3s;
+
+							&:hover {
+								background-color: #fff;
+								color: var(--primary-color);
+								border: 1px solid var(--primary-color);
+							}
+						}
+					}
+				}
+
+				.right__modal {
+					.inner {
+						h4 {
+							width: 500px;
+							background-color: #333;
+							color: #fff;
+							text-align: center;
+							padding: 15px 200px;
+						}
+
+						h5 {
+							.buttons {
+								display: flex;
+								align-items: center;
+
+								a {
+									width: 180px;
+									height: 45px;
+									text-align: center;
+									display: flex;
+									flex-direction: column;
+
+									button {
+										border: none;
+										width: 100%;
+										height: 100%;
+										background-color: var(--primary-color);
+										color: #fff;
+										font: 500 16px/2 "Nanum Gothic";
+										cursor: pointer;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.box02 {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			height: 50px;
+
+			a {
+				margin-right: 3px;
+				width: 100%;
+				height: 100%;
+
+				.detailed__info,
+				.review,
+				.question {
+					text-align: center;
+					font: 700 18px/50px "Nanum Gothic";
+					color: #fff;
+					letter-spacing: 1px;
+				}
+
+				.detailed__info {
+					background-color: var(--primary-color);
+				}
+
+				.review,
+				.question {
+					background-color: #f0f0f0;
+					color: #6c6c6c;
+				}
+
+				.question {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+}
