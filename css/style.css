@@ -881,7 +881,7 @@
   letter-spacing: 1px;
 }
 #detail .detail__inner .box02 a .detailed__info {
-  background-color: var(--primary-color);
+  background-color: #252525;
 }
 #detail .detail__inner .box02 a .review,
 #detail .detail__inner .box02 a .question {
@@ -890,6 +890,902 @@
 }
 #detail .detail__inner .box02 a .question {
   margin-right: 0px;
+}
+
+#review {
+  margin-top: 120px;
+}
+#review .detail__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 80px 0px;
+}
+#review .detail__inner .box01 {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+#review .detail__inner .box01 .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+#review .detail__inner .box01 .left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+#review .detail__inner .box01 .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#review .detail__inner .box01 .right .right__txt01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#review .detail__inner .box01 .right .right__txt01 h2 {
+  font: 800 25px/1 "Nanum Gothic";
+}
+#review .detail__inner .box01 .right .right__txt01 span {
+  color: red;
+  font-size: 30px;
+}
+#review .detail__inner .box01 .right .right__txt02 {
+  margin-top: 50px;
+}
+#review .detail__inner .box01 .right .right__txt02 .right__txt02__01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#review .detail__inner .box01 .right .right__txt02 .right__txt02__01 span {
+  color: var(--primary-color);
+  font: 800 20px/1 "Nanum Gothic";
+}
+#review .detail__inner .box01 .right .right__txt02 .right__txt02__01 p span {
+  color: #333;
+  font: 800 20px/1 "Nanum Gothic";
+}
+#review .detail__inner .box01 .right .right__txt02 .right__txt02__01 p span:first-child {
+  text-decoration: line-through;
+  font: 600 14px/1 "Nanum Gothic";
+  margin-right: 10px;
+}
+#review .detail__inner .box01 .right .right__txt02 .right__txt02__02 {
+  margin-top: 20px;
+}
+#review .detail__inner .box01 .right .right__txt02 .right__txt02__02 p {
+  color: #333;
+  font: 600 16px/1 "Nanum Gothic";
+}
+#review .detail__inner .box01 .right .right__txt02 .right__txt02__02 p .free {
+  color: #bbb;
+  font: 400 13px/1 "Nanum Gothic";
+  margin-left: 3px;
+}
+#review .detail__inner .box01 .right .right__txt03 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  height: 170px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#review .detail__inner .box01 .right .right__txt03 .cart {
+  position: relative;
+  top: 0px;
+  right: -450px;
+  width: 87px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#review .detail__inner .box01 .right .right__txt03 .cart .inner {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+#review .detail__inner .box01 .right .right__txt03 .cart .inner button {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #333;
+  color: #333;
+  font: bold 14px/1 "Nanum Gothic";
+  text-align: center;
+  cursor: pointer;
+}
+#review .detail__inner .box01 .right .right__txt03 .cart .inner button:first-child {
+  background-color: transparent;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#review .detail__inner .box01 .right .right__txt03 .cart .inner button:last-child {
+  background-color: transparent;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#review .detail__inner .box01 .right .right__txt03 .cart .inner input {
+  width: 35px;
+  height: 25px;
+  border: none;
+  text-align: center;
+  font: 800 14px/1 "Nanum Gothic";
+  color: #252525;
+  background-color: transparent;
+  border: 1px solid #333;
+}
+#review .detail__inner .box01 .right .right__txt03 .cart span {
+  font: 400 12px/1 "Nanum Gothic";
+  margin-top: 7px;
+}
+#review .detail__inner .box01 .right .right__txt03 .right__txt03__01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: var(--primary-color);
+  font: 600 18px/1 "Nanum Gothic";
+}
+#review .detail__inner .box01 .right .right__txt03 .right__txt03__01 span:nth-of-type(2) {
+  font: 800 25px/1 "Nanum Gothic";
+}
+#review .detail__inner .box01 .right .right__txt03 .right__txt03__02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #333;
+  font: 600 16px/1 "Nanum Gothic";
+}
+#review .detail__inner .box01 .right .right__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#review .detail__inner .box01 .right .right__buttons button {
+  border: none;
+  cursor: pointer;
+  height: 70px;
+  width: 580px;
+  padding: 20px;
+  font: 600 20px/1 "Nanum Gothic";
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+#review .detail__inner .box01 .right .right__buttons button:last-child {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+#review .detail__inner .box01 .right .right__buttons button:last-child:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+#review .detail__inner .box01 .right .right__modal .inner h4 {
+  width: 500px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 200px;
+}
+#review .detail__inner .box01 .right .right__modal .inner h5 .buttons {
+  display: flex;
+  align-items: center;
+}
+#review .detail__inner .box01 .right .right__modal .inner h5 .buttons a {
+  width: 180px;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#review .detail__inner .box01 .right .right__modal .inner h5 .buttons a button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  font: 500 16px/2 "Nanum Gothic";
+  cursor: pointer;
+}
+#review .detail__inner .box02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+#review .detail__inner .box02 a {
+  margin-right: 3px;
+  width: 100%;
+  height: 100%;
+}
+#review .detail__inner .box02 a .detailed__info,
+#review .detail__inner .box02 a .review,
+#review .detail__inner .box02 a .question {
+  text-align: center;
+  font: 700 18px/50px "Nanum Gothic";
+  color: #fff;
+  letter-spacing: 1px;
+}
+#review .detail__inner .box02 a .review {
+  background-color: #252525;
+}
+#review .detail__inner .box02 a .detailed__info,
+#review .detail__inner .box02 a .question {
+  background-color: #f0f0f0;
+  color: #6c6c6c;
+}
+#review .detail__inner .box02 a .question {
+  margin-right: 0px;
+}
+#review .detail__inner .write {
+  margin-left: auto;
+  margin-top: -80px;
+  margin-right: 3px;
+}
+#review .detail__inner .write button {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 600 16px/1 "Nanum Gothic";
+  letter-spacing: 1px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#review .detail__inner .write button span:first-child {
+  margin-right: 10px;
+}
+#review .detail__inner .write button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+#review .detail__inner .write .review__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7) fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#review .detail__inner .write .review__modal .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  width: 500px;
+}
+#review .detail__inner .write .review__modal .inner h4 {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 200px;
+  font: 800 18px/2 "Nanum Gothic";
+}
+#review .detail__inner .write .review__modal .inner .modal__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px;
+  background-color: #fff;
+  position: relative;
+}
+#review .detail__inner .write .review__modal .inner .modal__wrap h5 {
+  width: 100%;
+  background-color: #fff;
+  margin: 0px 20px 30px;
+  padding-left: 5px;
+  font: 500 18px/1 "Nanum Gothic";
+}
+#review .detail__inner .write .review__modal .inner .modal__wrap input {
+  width: 100%;
+  height: 330px;
+  background-color: #e7e7e7;
+  padding: 20px;
+  font: 500 14px/1 "Nanum Gothic";
+  border: none;
+  border-radius: 20px;
+}
+#review .detail__inner .write .review__modal .inner .modal__wrap .count {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  font: 400 14px/1 "Nanum Gothic";
+  color: #c8c8c8;
+}
+#review .detail__inner .write .review__modal .inner .modal__wrap .review__buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+#review .detail__inner .write .review__modal .inner .modal__wrap .review__buttons .review__cancel,
+#review .detail__inner .write .review__modal .inner .modal__wrap .review__buttons .review__confirm {
+  border: 1px solid #252525;
+  cursor: pointer;
+  font: 600 16px/1 "Nanum Gothic";
+  padding: 13px 30px;
+  color: #333;
+  background-color: #fff;
+}
+#review .detail__inner .write .review__modal .inner .modal__wrap .review__buttons .review__confirm {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+#review .detail__inner .write .review__modal .inner .modal__wrap .review__buttons .review__confirm a {
+  color: #fff;
+}
+#review .detail__inner .write .review__cancel__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7) fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#review .detail__inner .write .review__cancel__modal .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  width: 500px;
+}
+#review .detail__inner .write .review__cancel__modal .inner h4 {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 200px;
+  font: 800 18px/2 "Nanum Gothic";
+}
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px;
+  background-color: #fff;
+  position: relative;
+}
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap h5 {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  font: 500 18px/1.5 "Nanum Gothic";
+  text-align: center;
+}
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap input {
+  width: 100%;
+  height: 330px;
+  background-color: #e7e7e7;
+  padding: 20px;
+  font: 500 14px/1 "Nanum Gothic";
+  border: none;
+  border-radius: 20px;
+}
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap .count {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  font: 400 14px/1 "Nanum Gothic";
+  color: #c8c8c8;
+}
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap .review__buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap .review__buttons .review__cancel,
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap .review__buttons .review__confirm {
+  border: 1px solid #252525;
+  cursor: pointer;
+  font: 600 16px/1 "Nanum Gothic";
+  padding: 13px 30px;
+  color: #333;
+  background-color: #fff;
+}
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap .review__buttons .review__confirm {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+#review .detail__inner .write .review__cancel__modal .inner .cancel__modal__wrap .review__buttons .review__confirm a {
+  color: #fff;
+}
+#review .detail__inner .write .review__confirm__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7) fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#review .detail__inner .write .review__confirm__modal .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  width: 500px;
+}
+#review .detail__inner .write .review__confirm__modal .inner h4 {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 200px;
+  font: 800 18px/2 "Nanum Gothic";
+}
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px;
+  background-color: #fff;
+  position: relative;
+}
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap h5 {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  font: 500 18px/1.5 "Nanum Gothic";
+  text-align: center;
+}
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap input {
+  width: 100%;
+  height: 330px;
+  background-color: #e7e7e7;
+  padding: 20px;
+  font: 500 14px/1 "Nanum Gothic";
+  border: none;
+  border-radius: 20px;
+}
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap .count {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  font: 400 14px/1 "Nanum Gothic";
+  color: #c8c8c8;
+}
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap .review__buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap .review__buttons .review__cancel,
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap .review__buttons .review__confirm {
+  border: 1px solid #252525;
+  cursor: pointer;
+  font: 600 16px/1 "Nanum Gothic";
+  padding: 13px 30px;
+  color: #333;
+  background-color: #fff;
+}
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap .review__buttons .review__confirm {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+#review .detail__inner .write .review__confirm__modal .inner .confirm__modal__wrap .review__buttons .review__confirm a {
+  color: #fff;
+}
+#review .detail__inner .box03 ul li {
+  border: 2px solid #b3b3b3;
+  border-radius: 10px;
+  width: 840px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+#review .detail__inner .box03 ul li:last-child {
+  margin-bottom: 0px;
+}
+#review .detail__inner .box03 ul li span {
+  font: 800 16px/1 "Nanum Gothic";
+}
+#review .detail__inner .box03 ul li p {
+  font: 400 16px/1.5 "Nanum Gothic";
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#review .detail__inner .box03 ul li p button {
+  padding: 8px 20px;
+  cursor: pointer;
+  font: 400 14px/1 "Nanum Gothic";
+  background-color: #252525;
+  color: #fff;
+  border-radius: 5px;
+}
+#review .detail__inner .box03 ul .seller {
+  background-color: #f2f2f2;
+  position: relative;
+  right: -170px;
+}
+#review .detail__inner .box03 .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#review .detail__inner .box03 .pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 13px/1 "Nanum Gothic";
+  color: #333;
+  transition: 0.3s;
+  padding: 5px;
+}
+#review .detail__inner .box03 .pagination a:hover {
+  color: #111;
+  font-weight: bold;
+}
+#review .detail__inner .box03 .pagination a span {
+  margin: 0 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+}
+#review .detail__inner .box03 .pagination a .bold {
+  margin: 0px;
+  background-color: transparent;
+  border-radius: none;
+  color: var(--primary-color);
+  font: 800 13px/1 "Nanum Gothic";
+}
+#review .detail__inner .box03 .pagination .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+#mypage {
+  margin-top: 120px;
+}
+#mypage .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 147px;
+}
+#mypage .inner h2 {
+  font: 700 30px/1 "Noto Sans";
+  margin-bottom: 52px;
+}
+#mypage .inner .tab__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+#mypage .inner .tab__menu a {
+  margin-right: 3px;
+  width: 100%;
+  height: 100%;
+}
+#mypage .inner .tab__menu a .history,
+#mypage .inner .tab__menu a .delivery,
+#mypage .inner .tab__menu a .memberInfo {
+  text-align: center;
+  font: 700 18px/50px "Nanum Gothic";
+  color: #fff;
+  letter-spacing: 1px;
+}
+#mypage .inner .tab__menu a .history {
+  background-color: #252525;
+}
+#mypage .inner .tab__menu a .delivery,
+#mypage .inner .tab__menu a .memberInfo {
+  background-color: #f0f0f0;
+  color: #6c6c6c;
+}
+#mypage .inner .tab__menu a .memberInfo {
+  margin-right: 0px;
+}
+#mypage .inner .search__box {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 29px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 135px;
+  margin-bottom: 70px;
+}
+#mypage .inner .search__box .first {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mypage .inner .search__box .first span {
+  font: 700 16px/1 "Noto Sans";
+  padding-left: 30px;
+}
+#mypage .inner .search__box .first .search__box__buttons button {
+  padding: 3px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+#mypage .inner .search__box .first .date label input {
+  padding: 3px 23px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: #fff;
+  cursor: pointer;
+}
+#mypage .inner .search__box .first .date span {
+  margin: 0px 7px;
+  padding-left: 0px;
+}
+#mypage .inner .search__box .second {
+  width: 100%;
+  padding: 0px;
+}
+#mypage .inner .search__box .second select {
+  width: 15%;
+  height: 27px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-left: 3px;
+  padding-left: 10px;
+}
+#mypage .inner .search__box .second label input {
+  width: 63%;
+  height: 27px;
+  border: 1px solid green;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+}
+#mypage .inner .search__box .second button {
+  width: 10%;
+  height: 27px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font: normal 15px/1 "Noto Sans";
+  background-color: #fff;
+}
+#mypage .inner .search__box .second button:last-child {
+  color: #fff;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+#mypage .inner .history2 {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+#mypage .inner .history2 h4 {
+  font: 800 20px/1 "Noto Sans";
+}
+#mypage .inner .history2 .history__line {
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  margin: 10px 0px 20px 0px;
+}
+#mypage .inner .history2 .history__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+#mypage .inner .history2 .history__contents .first,
+#mypage .inner .history2 .history__contents .second,
+#mypage .inner .history2 .history__contents .third {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 720px;
+}
+#mypage .inner .history2 .history__contents .first {
+  width: 15%;
+}
+#mypage .inner .history2 .history__contents .first ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 35px;
+}
+#mypage .inner .history2 .history__contents .first ul li {
+  font: 600 16px/1.3 "Noto Sans";
+  text-align: center;
+}
+#mypage .inner .history2 .history__contents .first ul li .orderNo {
+  font: 400 16px/1.3 "Noto Sans";
+}
+#mypage .inner .history2 .history__contents .first ul li button {
+  background-color: #252525;
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+#mypage .inner .history2 .history__contents .second {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 55%;
+}
+#mypage .inner .history2 .history__contents .second p {
+  font: 800 16px/1.3 "Noto Sans";
+  margin-bottom: 30px;
+}
+#mypage .inner .history2 .history__contents .second ul {
+  display: flex;
+  flex-direction: column;
+}
+#mypage .inner .history2 .history__contents .second ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#mypage .inner .history2 .history__contents .second ul li img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+#mypage .inner .history2 .history__contents .second ul li span {
+  font: 800 16px/1.7 "Noto Sans";
+}
+#mypage .inner .history2 .history__contents .second ul li .product__name {
+  margin-left: -65px;
+}
+#mypage .inner .history2 .history__contents .second ul li .quant {
+  font: 400 14px/1.7 "Noto Sans";
+  position: relative;
+  top: 15px;
+}
+#mypage .inner .history2 .history__contents .second .delivery__info {
+  border-top: 2px dashed #6c6c6c;
+}
+#mypage .inner .history2 .history__contents .second .delivery__info p {
+  margin-top: 40px;
+}
+#mypage .inner .history2 .history__contents .second .delivery__info ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-left: 50px;
+}
+#mypage .inner .history2 .history__contents .second .delivery__info ul li .delivery__add,
+#mypage .inner .history2 .history__contents .second .delivery__info ul li .delivery__note {
+  font: 400 16px/1.3 "Noto Sans";
+  width: 70px;
+  color: #828282;
+}
+#mypage .inner .history2 .history__contents .third {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+#mypage .inner .history2 .history__contents .third p {
+  font: 800 16px/1.3 "Noto Sans";
+  margin-bottom: 30px;
+}
+#mypage .inner .history2 .history__contents .third ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+#mypage .inner .history2 .history__contents .third ul li span {
+  font: 500 16px/1 "Noto Sans";
+  display: flex;
+  justify-content: space-between;
+  color: #252525;
+}
+#mypage .inner .history2 .history__contents .third .total {
+  border-top: 2px dashed #6c6c6c;
+  height: 215px;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+}
+#mypage .inner .history2 .history__contents .third .total span {
+  font: 800 24px/1.3 "Noto Sans";
+  display: flex;
+  justify-content: flex-end;
+  color: var(--primary-color);
+}
+#mypage .inner .history2 .history__contents .third .total .total__price {
+  font: 600 16px/1.3 "Noto Sans";
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  color: #252525;
+}
+#mypage .inner .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+#mypage .inner .pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 13px/1 "Nanum Gothic";
+  color: #333;
+  transition: 0.3s;
+  padding: 5px;
+}
+#mypage .inner .pagination a:hover {
+  color: #111;
+  font-weight: bold;
+}
+#mypage .inner .pagination a span {
+  margin: 0 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+}
+#mypage .inner .pagination a .bold {
+  margin: 0px;
+  background-color: transparent;
+  border-radius: none;
+  color: var(--primary-color);
+  font: 800 13px/1 "Nanum Gothic";
+}
+#mypage .inner .pagination .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
 }
 
 :root {
@@ -1105,36 +2001,30 @@ header .inner .main-menu .item .red .material-icons {
 }
 
 #products {
-  width: 100%;
+  width: 1180px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
-#products .inner {
-  display: flex;
-  gap: 60px;
-}
-#products .inner .left {
-  width: 90%;
-}
-#products .inner .left ul {
+#products .inner ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
-#products .inner .left ul li {
+#products .inner ul li {
   width: 30%;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
-#products .inner .left ul li a img {
+#products .inner ul li a img {
   width: 100%;
   height: 220px;
   border: 2px solid #ddd;
   border-radius: 20px;
 }
-#products .inner .left ul li .icons {
+#products .inner ul li .icons {
   position: relative;
   top: -210px;
   display: flex;
@@ -1142,10 +2032,10 @@ header .inner .main-menu .item .red .material-icons {
   justify-content: space-between;
   padding: 10px 20px 0px;
 }
-#products .inner .left ul li .icons .red__heart {
+#products .inner ul li .icons .red__heart {
   color: red;
 }
-#products .inner .left ul li .txt {
+#products .inner ul li .txt {
   margin-top: -15px;
   display: flex;
   justify-content: space-between;
@@ -1153,19 +2043,19 @@ header .inner .main-menu .item .red .material-icons {
   padding: 0px 20px;
   font: 600 16px/1 "Nanum Gothic";
 }
-#products .inner .left ul li .txt .price {
+#products .inner ul li .txt .price {
   font: 800 16px/1 "Nanum Gothic";
 }
-#products .inner .left ul .cart__click a img {
+#products .inner ul .cart__click a img {
   filter: brightness(0.3);
 }
-#products .inner .left ul .cart__click .icons a {
+#products .inner ul .cart__click .icons a {
   background-color: transparent;
 }
-#products .inner .left ul .cart__click .cart {
+#products .inner ul .cart__click .cart {
   position: relative;
 }
-#products .inner .left ul .cart__click .cart .inner {
+#products .inner ul .cart__click .cart .inner {
   width: 100px;
   display: flex;
   align-items: center;
@@ -1175,9 +2065,9 @@ header .inner .main-menu .item .red .material-icons {
   padding: 5px;
   position: absolute;
   top: -165px;
-  left: 100px;
+  left: 130px;
 }
-#products .inner .left ul .cart__click .cart .inner button {
+#products .inner ul .cart__click .cart .inner button {
   width: 25px;
   height: 25px;
   border: none;
@@ -1187,103 +2077,19 @@ header .inner .main-menu .item .red .material-icons {
   text-align: center;
   cursor: pointer;
 }
-#products .inner .left ul .cart__click .cart .inner button:first-child {
+#products .inner ul .cart__click .cart .inner button:first-child {
   background-color: #949494;
 }
-#products .inner .left ul .cart__click .cart .inner button:last-child {
+#products .inner ul .cart__click .cart .inner button:last-child {
   background-color: #252525;
 }
-#products .inner .left ul .cart__click .cart .inner input {
+#products .inner ul .cart__click .cart .inner input {
   width: 25px;
   height: 25px;
   border: none;
   text-align: center;
   font: bold 14px/1 "Nanum Gothic";
   color: #252525;
-}
-#products .inner .right {
-  width: 10%;
-}
-#products .inner .right ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  border-radius: var(--border-radius);
-}
-#products .inner .right ul li {
-  background-color: var(--primary-color);
-}
-#products .inner .right ul li:first-child {
-  border-top-right-radius: var(--border-radius);
-  border-top-left-radius: var(--border-radius);
-}
-#products .inner .right ul li:last-child {
-  border-bottom-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-}
-#products .inner .right ul li a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  color: #fff;
-}
-#products .inner .right ul li a p {
-  font: bold 14px/1 "Nanum Gothic";
-  margin-top: 10px;
-}
-#products .inner .right ul li a span {
-  font-size: 40px;
-}
-#products .inner .right ul li .line {
-  background-color: #fff;
-  opacity: 0.7;
-  width: 90px;
-  height: 1px;
-  margin: 0 auto;
-}
-#products .inner .right ul .right__cart,
-#products .inner .right ul .right__favorite {
-  position: relative;
-}
-#products .inner .right ul .right__cart a .cart__count,
-#products .inner .right ul .right__cart a .favorite__count,
-#products .inner .right ul .right__favorite a .cart__count,
-#products .inner .right ul .right__favorite a .favorite__count {
-  position: absolute;
-  top: 27px;
-  right: 35px;
-  background-color: #ff1b1b;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  text-align: center;
-  font: normal 13px/20px "Nanum Gothic";
-}
-#products .inner .right ul .right__cart {
-  margin-bottom: -10px;
-}
-#products .inner .right ul .last a {
-  padding: 20px 10px;
-}
-#products .inner .right ul .last a span {
-  margin: 10px 0px 0px;
-  font-size: 27px;
-}
-#products .inner .right ul .last a p {
-  margin-bottom: 20px;
-}
-#products .inner .right ul .last a p:last-child {
-  margin-bottom: 10px;
-}
-#products .inner .right ul .last a img {
-  width: 100px;
-  height: 80px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
 }
 #products .pagination {
   display: flex;
@@ -1323,6 +2129,155 @@ header .inner .main-menu .item .red .material-icons {
   align-items: center;
   gap: 20px;
   text-align: center;
+}
+
+#aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 120px;
+}
+#aside .sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-radius: var(--border-radius);
+}
+#aside .sidebar ul li {
+  background-color: var(--primary-color);
+}
+#aside .sidebar ul li:first-child {
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+#aside .sidebar ul li:last-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+#aside .sidebar ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+}
+#aside .sidebar ul li a p {
+  font: bold 14px/1 "Nanum Gothic";
+  margin-top: 10px;
+}
+#aside .sidebar ul li a span {
+  font-size: 40px;
+}
+#aside .sidebar ul li .line {
+  background-color: #fff;
+  opacity: 0.7;
+  width: 90px;
+  height: 1px;
+  margin: 0 auto;
+}
+#aside .sidebar ul .right__cart,
+#aside .sidebar ul .right__favorite {
+  position: relative;
+}
+#aside .sidebar ul .right__cart a .cart__count,
+#aside .sidebar ul .right__cart a .favorite__count,
+#aside .sidebar ul .right__favorite a .cart__count,
+#aside .sidebar ul .right__favorite a .favorite__count {
+  position: absolute;
+  top: 27px;
+  right: 35px;
+  background-color: #ff1b1b;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font: normal 13px/20px "Nanum Gothic";
+}
+#aside .sidebar ul .right__cart {
+  margin-bottom: -10px;
+}
+#aside .sidebar ul .last a {
+  padding: 20px 10px;
+}
+#aside .sidebar ul .last a span {
+  margin: 10px 0px 0px;
+  font-size: 27px;
+}
+#aside .sidebar ul .last a p {
+  margin-bottom: 20px;
+}
+#aside .sidebar ul .last a p:last-child {
+  margin-bottom: 10px;
+}
+#aside .sidebar ul .last a img {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+#footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #2d2d2d;
+  position: relative;
+}
+#footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#footer .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .inner h1 {
+  float: left;
+}
+#footer .inner h1 img {
+  width: 30%;
+}
+#footer .inner ul {
+  float: right;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+#footer .inner ul li {
+  float: left;
+  margin-left: 20px;
+}
+#footer .inner ul li a {
+  font: 14px/1 "Nanum Gothic";
+  color: #fff;
+  transition: 0.5s;
+}
+#footer .inner ul li a:hover {
+  color: #868686;
+  transition: 0.5s;
+}
+#footer .inner address {
+  float: left;
+  width: 100%;
+  font: 12px/1.7 "Nanum Gothic";
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-top: 1px solid #888;
+}
+#footer .inner address span {
+  font: bold 14px/1.5 "Nanum Gothic";
+}
+#footer .inner p {
+  float: left;
+  width: 100%;
+  font: 13px/1 "Nanum Gothic";
+  color: #fff;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

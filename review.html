@@ -111,7 +111,7 @@
         </div>
     </header>
 
-    <section id="detail">
+    <section id="review">
         <div class="inner detail__inner">
 
             <div class="box01">
@@ -220,8 +220,174 @@
 
             </div>
 
+            <div class="write">
+                <button>
+                    <span class="material-symbols-outlined">rate_review</span>
+                    <span>리뷰작성하기</span>
+                </button>
+
+
+
+
+                <!-- 리뷰작성 모달 창 -->
+                <div class="review__modal" style="display: none;">
+                    <div class="inner">
+
+                        <h4>알림</h4>
+
+                        <div class="modal__wrap">
+                            <h5>상품에 대한 리뷰를 남겨주세요.</h5>
+
+                            <input type="text" placeholder="10자 이상 500자 미만으로 작성해주세요.">
+                            <span class="count">15/500</span>
+
+
+                            <div class="review__buttons">
+                                <button class="review__cancel">
+                                    <a href="#">작성취소</a>
+                                </button>
+
+                                <button class="review__confirm">
+                                    <a href="#">리뷰등록</a>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 리뷰작성 취소 모달 창 -->
+                <div class="review__cancel__modal" style="display: none;">
+                    <div class="inner">
+
+                        <h4>알림</h4>
+
+                        <div class="cancel__modal__wrap">
+                            <h5>작성중인 내용이 모두 삭제됩니다. <br>
+                                취소 하시겠습니까?</h5>
+
+
+                            <div class="review__buttons">
+                                <button class="review__cancel">
+                                    <a href="#">취소하기</a>
+                                </button>
+
+                                <button class="review__confirm">
+                                    <a href="#">계속작성</a>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 리뷰작성 완료 모달 창 -->
+                <div class="review__confirm__modal" style="display: none;">
+                    <div class="inner">
+
+                        <h4>알림</h4>
+
+                        <div class="confirm__modal__wrap">
+                            <h5>리뷰 작성이 완료 되었습니다.</h5>
+
+
+                            <div class="review__buttons">
+                                <button class="review__confirm">
+                                    <a href="#">확인</a>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <div class="box03">
-                <img src="./img/망고스틴_상세페이지.png" alt="망고스틴 상세페이지">
+                <ul>
+                    <li>
+                        <span class="id">Chan****</span>
+                        <span class="date">2023. 07. 17</span>
+
+                        <p>
+                            배송빨라서 좋았어요! <br>
+                            몇개는 상했고 대부분 괜찮았어요 ㅎㅎ <br>
+                            베트남에서 너무 맛있어서 사봤는데 역시 맛있네요.
+
+                            <button>답글달기</button>
+                        </p>
+                    </li>
+                    <li class="seller">
+                        <span class="id">판매자</span>
+                        <span class="date">2023. 07. 17</span>
+
+                        <p>
+                            고객님 소중한 리뷰 작성 감사합니다^^ <br>
+                            앞으로도 더 좋은 품질의 상품들로 찾아뵙겠습니다! <br>
+                            다음에도 또 이용해주세요~!
+
+                        </p>
+                    </li>
+                    <li>
+                        <span class="id">Chan****</span>
+                        <span class="date">2023. 07. 17</span>
+
+                        <p>
+                            배송빨라서 좋았어요! <br>
+                            몇개는 상했고 대부분 괜찮았어요 ㅎㅎ <br>
+                            베트남에서 너무 맛있어서 사봤는데 역시 맛있네요.
+
+                            <button>답글달기</button>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="id">Chan****</span>
+                        <span class="date">2023. 07. 17</span>
+
+                        <p>
+                            배송빨라서 좋았어요! <br>
+                            몇개는 상했고 대부분 괜찮았어요 ㅎㅎ <br>
+                            베트남에서 너무 맛있어서 사봤는데 역시 맛있네요.
+
+                            <button>답글달기</button>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="id">Chan****</span>
+                        <span class="date">2023. 07. 17</span>
+
+                        <p>
+                            배송빨라서 좋았어요! <br>
+                            몇개는 상했고 대부분 괜찮았어요 ㅎㅎ <br>
+                            베트남에서 너무 맛있어서 사봤는데 역시 맛있네요.
+
+                            <button>답글달기</button>
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="pagination">
+                    <a href="#" class="prev">
+                        <span class="material-symbols-outlined">
+                            chevron_left
+                        </span>
+                    </a>
+
+                    <p class="numbers">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">
+                            <span class="bold">4</span>
+                        </a>
+                        <a href="#">5</a>
+                    </p>
+
+                    <a href="#" class="next">
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
