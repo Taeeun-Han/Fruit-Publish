@@ -1,0 +1,598 @@
+#mypage_delivery {
+	margin-top: 120px;
+
+	.inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 147px;
+
+		h2 {
+			font: 700 30px/1 "Noto Sans";
+			margin-bottom: 52px;
+		}
+
+		.tab__menu {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			height: 50px;
+			margin-bottom: 25px;
+
+			a {
+				margin-right: 3px;
+				width: 100%;
+				height: 100%;
+
+				.history,
+				.delivery,
+				.memberInfo {
+					text-align: center;
+					font: 700 18px/50px "Nanum Gothic";
+					color: #fff;
+					letter-spacing: 1px;
+				}
+
+				.delivery {
+					background-color: #252525;
+				}
+
+				.history,
+				.memberInfo {
+					background-color: #f0f0f0;
+					color: #6c6c6c;
+				}
+
+				.memberInfo {
+					margin-right: 0px;
+				}
+			}
+		}
+
+		.txt__box {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 85%;
+			margin-bottom: 20px;
+
+			p {
+				font: 700 18px/2.5 "Noto Sans";
+
+				span {
+					font: 400 18px/1 "Noto Sans";
+				}
+			}
+
+			button {
+				background-color: var(--primary-color);
+				color: #fff;
+				border-radius: 5px;
+				padding: 15px 20px;
+				border: none;
+				cursor: pointer;
+				font: 400 16px/1 "Noto Sans";
+			}
+		}
+
+		.delivery__wrap {
+			border: 1px solid rgba(0, 0, 0, 0.3);
+			background: #fff;
+			width: 100%;
+			padding: 50px 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 70px;
+
+			.buttons {
+				margin-left: auto;
+
+				button {
+					border-radius: 50px;
+					background: #252525;
+					color: #fff;
+					padding: 5px 15px;
+					cursor: pointer;
+					border: 1px solid #252525;
+					margin-right: 5px;
+
+					&:last-child {
+						color: #333;
+						background: #fff;
+						border: 1px solid #252525;
+						margin-right: 0px;
+					}
+				}
+			}
+
+			ul {
+				width: 70%;
+				margin-top: 30px;
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+
+				li {
+					width: 100%;
+					border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+					padding-bottom: 10px;
+					display: flex;
+					align-items: center;
+
+					.li__title {
+						font: 700 18px/1 "Noto Sans";
+						width: 130px;
+
+						> span {
+							font: 600 18px/1 "Noto Sans";
+						}
+					}
+
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+
+	.delivery__add {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.7) fixed;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.delivery__add__inner {
+			width: 600px;
+
+			.top {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				height: 80px;
+				font: 800 18px/80px "Noto Sans";
+			}
+
+			.bottom {
+				background-color: #fff;
+				width: 100%;
+				height: 600px;
+				padding: 50px 80px;
+				display: flex;
+				flex-direction: column;
+
+				label {
+					margin-bottom: 30px;
+					display: flex;
+					align-items: center;
+
+					p {
+						font: 800 16px/1 "Noto Sans";
+						width: 20%;
+					}
+
+					input {
+						width: 80%;
+						height: 40px;
+						background-color: #f0f0f0;
+						border-radius: 5px;
+						border: none;
+					}
+				}
+
+				.phone {
+					input {
+						width: 30%;
+
+						&:last-child {
+							width: 45%;
+							margin-left: 5%;
+						}
+					}
+				}
+
+				.add {
+					flex-wrap: wrap;
+
+					button {
+						width: 30%;
+						height: 40px;
+						border: none;
+						background-color: #252525;
+						color: #fff;
+						border-radius: 5px;
+						cursor: pointer;
+					}
+
+					input {
+						width: 80%;
+					}
+
+					.postalCode {
+						width: 45%;
+						margin-left: 5%;
+					}
+
+					.postalCode2 {
+						width: 80%;
+						margin-top: 30px;
+						margin-left: auto;
+					}
+				}
+			}
+
+			.delivery__add__buttons {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				margin-top: 30px;
+				justify-content: center;
+
+				.delivery__add__cancel,
+				.delivery__add__confirm {
+					border: 1px solid #252525;
+					cursor: pointer;
+					font: 600 16px/1 "Nanum Gothic";
+					padding: 13px 30px;
+					color: #333;
+					background-color: #fff;
+					border-radius: 5px;
+				}
+
+				.delivery__add__confirm {
+					border: 1px solid var(--primary-color);
+					background-color: var(--primary-color);
+
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.delivery__add__confirm {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.7) fixed;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.delivery__add__confirm__inner {
+			width: 600px;
+
+			.top {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				height: 60px;
+				font: 800 18px/60px "Noto Sans";
+			}
+
+			.bottom {
+				background-color: #fff;
+				width: 100%;
+				height: 250px;
+				padding: 50px 80px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				span {
+					font: 600 18px/1 "Noto Sans";
+					margin-bottom: 20px;
+					text-align: center;
+				}
+			}
+
+			.delivery__add__confirm__buttons {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				margin-top: 30px;
+				justify-content: center;
+
+				button {
+					border: 1px solid #252525;
+					cursor: pointer;
+					font: 600 16px/1 "Noto Sans";
+					padding: 13px 30px;
+					background-color: var(--primary-color);
+					border-radius: 5px;
+					border: none;
+
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.delivery__add__calcel {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.7) fixed;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.delivery__add__calcel__inner {
+			width: 600px;
+
+			.top {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				height: 60px;
+				font: 800 18px/60px "Noto Sans";
+			}
+
+			.bottom {
+				background-color: #fff;
+				width: 100%;
+				height: 250px;
+				padding: 50px 80px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				span {
+					font: 600 18px/2 "Noto Sans";
+					margin-bottom: 20px;
+					text-align: center;
+				}
+			}
+
+			.delivery__add__calcel__buttons {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				margin-top: 10px;
+				justify-content: center;
+
+				button {
+					border: 1px solid #252525;
+					cursor: pointer;
+					font: 600 16px/1 "Noto Sans";
+					padding: 13px 30px;
+					background-color: var(--primary-color);
+					border-radius: 5px;
+					border: none;
+
+					a {
+						color: #fff;
+					}
+
+					&:first-child {
+						background-color: #fff;
+						border: 1px solid #252525;
+
+						a {
+							color: #252525;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.delivery__delete {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.7) fixed;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.delivery__delete__inner {
+			width: 600px;
+
+			.top {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				height: 60px;
+				font: 800 18px/60px "Noto Sans";
+			}
+
+			.bottom {
+				background-color: #fff;
+				width: 100%;
+				height: 250px;
+				padding: 50px 80px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				span {
+					font: 600 18px/2 "Noto Sans";
+					margin-bottom: 40px;
+					text-align: center;
+				}
+			}
+
+			.delivery__delete__buttons {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				margin-top: 10px;
+				justify-content: center;
+
+				button {
+					border: 1px solid #252525;
+					cursor: pointer;
+					font: 600 16px/1 "Noto Sans";
+					padding: 13px 30px;
+					background-color: var(--primary-color);
+					border-radius: 5px;
+					border: none;
+
+					a {
+						color: #fff;
+					}
+
+					&:first-child {
+						background-color: #fff;
+						border: 1px solid #252525;
+
+						a {
+							color: #252525;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.delivery__edit {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.7) fixed;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.delivery__edit__inner {
+			width: 600px;
+
+			.top {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				height: 80px;
+				font: 800 18px/80px "Noto Sans";
+			}
+
+			.bottom {
+				background-color: #fff;
+				width: 100%;
+				height: 600px;
+				padding: 50px 80px;
+				display: flex;
+				flex-direction: column;
+
+				label {
+					margin-bottom: 30px;
+					display: flex;
+					align-items: center;
+
+					p {
+						font: 800 16px/1 "Noto Sans";
+						width: 20%;
+					}
+
+					input {
+						width: 80%;
+						height: 40px;
+						background-color: #f0f0f0;
+						border-radius: 5px;
+						border: none;
+					}
+				}
+
+				.phone {
+					input {
+						width: 30%;
+
+						&:last-child {
+							width: 45%;
+							margin-left: 5%;
+						}
+					}
+				}
+
+				.add {
+					flex-wrap: wrap;
+
+					button {
+						width: 30%;
+						height: 40px;
+						border: none;
+						background-color: #252525;
+						color: #fff;
+						border-radius: 5px;
+						cursor: pointer;
+					}
+
+					input {
+						width: 80%;
+					}
+
+					.postalCode {
+						width: 45%;
+						margin-left: 5%;
+					}
+
+					.postalCode2 {
+						width: 80%;
+						margin-top: 30px;
+						margin-left: auto;
+					}
+				}
+			}
+
+			.delivery__edit__buttons {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				margin-top: 30px;
+				justify-content: center;
+
+				.delivery__edit__cancel,
+				.delivery__edit__confirm {
+					border: 1px solid #252525;
+					cursor: pointer;
+					font: 600 16px/1 "Nanum Gothic";
+					padding: 13px 30px;
+					color: #333;
+					background-color: #fff;
+					border-radius: 5px;
+				}
+
+				.delivery__edit__confirm {
+					border: 1px solid var(--primary-color);
+					background-color: var(--primary-color);
+
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

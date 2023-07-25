@@ -1,0 +1,301 @@
+#mypageEdit {
+	margin-top: 120px;
+
+	.inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 147px;
+
+		h2 {
+			font: 700 30px/1 "Noto Sans";
+			margin-bottom: 52px;
+		}
+
+		.tab__menu {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			height: 50px;
+			margin-bottom: 25px;
+
+			a {
+				margin-right: 3px;
+				width: 100%;
+				height: 100%;
+
+				.history,
+				.delivery,
+				.memberInfo {
+					text-align: center;
+					font: 700 18px/50px "Nanum Gothic";
+					color: #fff;
+					letter-spacing: 1px;
+				}
+
+				.memberInfo {
+					background-color: #252525;
+				}
+
+				.delivery,
+				.history {
+					background-color: #f0f0f0;
+					color: #6c6c6c;
+				}
+
+				.memberInfo {
+					margin-right: 0px;
+				}
+			}
+		}
+
+		.txt_box {
+			font: 600 25px/1 "Noto Sans";
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 40px;
+
+			p {
+				margin-bottom: 30px;
+			}
+
+			span {
+				font: 500 16px/1.5 "Noto Sans";
+			}
+		}
+
+		label {
+			width: 500px;
+
+			p {
+				font: bold 14px/1 "Nanum Gothic";
+				margin-bottom: 10px;
+				margin-left: 5px;
+			}
+
+			input {
+				width: 400px;
+				padding: 10px;
+				font: normal 12px/1 "Nanum Gothic";
+				color: #bbb;
+				background-color: #f0f0f0;
+				border-radius: 5px;
+				border: none;
+				margin-bottom: 30px;
+				margin-right: 10px;
+			}
+
+			button {
+				width: 70px;
+				background-color: #252525;
+				color: #fff;
+				border-radius: 5px;
+				padding: 8px 20px;
+				border: none;
+				cursor: pointer;
+			}
+		}
+
+		.email {
+			input {
+				width: 485px;
+			}
+		}
+
+		.change__PW {
+			display: flex;
+			flex-direction: column;
+			width: 500px;
+
+			.button__box {
+				border: 1px solid #b8b8b8;
+				width: 100%;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				padding-left: 20px;
+				margin-bottom: 80px;
+
+				button {
+					border-radius: 5px;
+					padding: 10px 20px;
+					background-color: var(--primary-color);
+					border: none;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.mypageEdit__button {
+			display: flex;
+			width: 500px;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			margin-bottom: 80px;
+
+			button {
+				background-color: var(--primary-color);
+				border: 1px solid var(--primary-color);
+				width: 200px;
+				padding: 13px;
+				border-radius: 5px;
+
+				a {
+					color: #fff;
+					font: bold 16px/1 "Nanum Gothic";
+				}
+
+				&:first-child {
+					background-color: #fff;
+					border: 1px solid #252525;
+
+					a {
+						color: #252525;
+					}
+				}
+			}
+		}
+	}
+
+	.mypageEdit__cancel {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.7) fixed;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.mypageEdit__cancel__inner {
+			width: 600px;
+
+			.top {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				height: 60px;
+				font: 800 18px/60px "Noto Sans";
+			}
+
+			.bottom {
+				background-color: #fff;
+				width: 100%;
+				height: 250px;
+				padding: 50px 80px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				span {
+					font: 400 18px/1.5 "Noto Sans";
+					margin-bottom: 20px;
+					text-align: center;
+				}
+			}
+
+			.mypageEdit__cancel__buttons {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				margin-top: 30px;
+				justify-content: center;
+
+				button {
+					border: 1px solid #252525;
+					cursor: pointer;
+					font: 600 16px/1 "Noto Sans";
+					padding: 13px 30px;
+					background-color: var(--primary-color);
+					border-radius: 5px;
+					border: none;
+
+					a {
+						color: #fff;
+					}
+
+					&:first-child {
+						border: 1px solid #252525;
+						background-color: #fff;
+
+						a {
+							color: #252525;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.mypageEdit__confirm {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.7) fixed;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.mypageEdit__confirm__inner {
+			width: 600px;
+
+			.top {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				height: 60px;
+				font: 800 18px/60px "Noto Sans";
+			}
+
+			.bottom {
+				background-color: #fff;
+				width: 100%;
+				height: 250px;
+				padding: 50px 80px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				span {
+					font: 400 18px/1.5 "Noto Sans";
+					margin-bottom: 20px;
+					text-align: center;
+				}
+			}
+
+			.mypageEdit__confirm__buttons {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				margin-top: 30px;
+				justify-content: center;
+
+				button {
+					border: 1px solid #252525;
+					cursor: pointer;
+					font: 600 16px/1 "Noto Sans";
+					padding: 13px 50px;
+					background-color: var(--primary-color);
+					border-radius: 5px;
+					border: none;
+
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
