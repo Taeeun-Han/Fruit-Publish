@@ -53,7 +53,7 @@
 		.txt_box {
 			font: 600 25px/1 "Noto Sans";
 			text-align: center;
-			margin-top: 50px;
+			margin-top: 80px;
 			margin-bottom: 70px;
 
 			p {
@@ -65,38 +65,73 @@
 			}
 		}
 
-		label {
+		.input {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 30px;
+
 			p {
-				font: bold 14px/1 "Nanum Gothic";
-				margin-bottom: 10px;
-				margin-left: 5px;
+				font: 600 14px/2.5 "Noto Sans";
+				padding-left: 10px;
+
+				&:last-child {
+					color: red;
+					font: 600 12px/2 "Noto Sans";
+					padding-left: 10px;
+				}
 			}
 
-			input {
-				width: 450px;
-				padding: 10px;
-				font: normal 12px/1 "Nanum Gothic";
-				color: #bbb;
-				background-color: #f0f0f0;
-				border-radius: 5px;
-				border: none;
-				margin-bottom: 50px;
+			.input_wrap {
+				display: flex;
+				align-items: center;
+
+				input {
+					width: 450px;
+					padding: 10px;
+					border-radius: 5px;
+					background-color: #f0f0f0;
+					border: 1px solid #f0f0f0;
+				}
+
+				span {
+					position: absolute;
+					right: 380px;
+				}
 			}
 		}
 
-		.wrong {
+		.inputWrong {
 			display: flex;
 			flex-direction: column;
+			margin-bottom: 30px;
 
-			input {
-				border: 1px solid red;
-				margin-bottom: 5px;
+			p {
+				font: 600 14px/2.5 "Noto Sans";
+				padding-left: 10px;
+
+				&:last-child {
+					color: red;
+					font: 600 12px/2 "Noto Sans";
+					padding-left: 10px;
+				}
 			}
 
-			span {
-				color: red;
-				font: 400 12px/1 "Noto Sans";
-				margin-bottom: 50px;
+			.input_wrap {
+				display: flex;
+				align-items: center;
+
+				input {
+					width: 450px;
+					padding: 10px;
+					border-radius: 5px;
+					background-color: #f0f0f0;
+					border: 1px solid red;
+				}
+
+				span {
+					position: absolute;
+					right: 380px;
+				}
 			}
 		}
 
@@ -104,7 +139,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: end;
-			margin-bottom: 80px;
+			margin-bottom: 150px;
 
 			button {
 				background-color: var(--primary-color);

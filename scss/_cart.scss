@@ -1,0 +1,248 @@
+#cart {
+	margin-top: 120px;
+
+	.inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 147px;
+
+		h2 {
+			font: 700 30px/1 "Noto Sans";
+			margin-bottom: 52px;
+		}
+
+		.txt {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			font: 400 16px/1 "Noto Sans";
+			padding: 10px 0px;
+
+			.left {
+				display: flex;
+				align-items: center;
+
+				.orange {
+					color: #ff7d04;
+					font: 800 16px/1 "Noto Sans";
+					margin-left: 10px;
+				}
+			}
+
+			.right {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				p {
+					color: #a7a7a7;
+					font: 800 16px/1 "Noto Sans";
+
+					&:nth-of-type(1) {
+						color: #333;
+					}
+				}
+			}
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 80px;
+
+			tr {
+				th,
+				td {
+					width: 100px;
+					height: 50px;
+					text-align: center;
+					border: none;
+					border-top: 1px solid #a7a7a7;
+					padding: 20px;
+					vertical-align: top; /* 위 */
+					vertical-align: bottom; /* 아래 */
+					vertical-align: middle; /* 가운데 */
+				}
+
+				td {
+					font: 400 14px/1 "Noto Sans";
+					border-right: 1px solid #a7a7a7;
+
+					.td_wrap {
+						display: flex;
+						justify-content: space-around;
+						align-items: center;
+
+						img {
+							width: 100px;
+							height: 100px;
+						}
+
+						.txt {
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							gap: 20px;
+							width: auto;
+							margin-left: -80px;
+
+							span {
+								&:first-child {
+									font: 800 14px/1 "Noto Sans";
+								}
+
+								&:nth-of-type(2) {
+									display: flex;
+									align-items: center;
+									gap: 2px;
+								}
+
+								button {
+									width: 20px;
+									height: 20px;
+									cursor: pointer;
+									font: 400 12px/1 "Noto Sans";
+									background-color: #fff;
+									border: 1px solid #333;
+									border-radius: 5px;
+									text-align: center;
+
+									&:nth-of-type(2) {
+										width: 30px;
+									}
+								}
+							}
+						}
+
+						.price {
+							display: flex;
+							align-items: center;
+							gap: 15px;
+							font: 400 13px/1 "Noto Sans";
+
+							button {
+								background-color: #fff;
+								border: 1px solid #333;
+								border-radius: 5px;
+								cursor: pointer;
+							}
+						}
+					}
+
+					&:nth-of-type(1) {
+						border-right: none;
+					}
+
+					&:nth-of-type(3) {
+						font: 800 14px/1 "Noto Sans";
+						letter-spacing: 0.5px;
+					}
+
+					&:last-child {
+						color: #ff7d04;
+						font: 800 14px/1 "Noto Sans";
+						letter-spacing: 0.5px;
+						border-right: none;
+					}
+				}
+			}
+
+			.title {
+				th {
+					border: none;
+					border-top: 2px solid #333;
+					padding-top: 10px 0px;
+					font: 800 16px/1 "Noto Sans";
+
+					&:first-child {
+						width: 10%;
+					}
+
+					&:nth-of-type(2) {
+						width: 50%;
+					}
+
+					&:nth-of-type(3) {
+						width: 20%;
+					}
+
+					&:last-child {
+						width: 10%;
+					}
+				}
+			}
+
+			.lastTr {
+				border-top: 2px solid #333;
+				border-bottom: 2px solid #333;
+
+				.lastTrTd {
+					text-align: right;
+					font: 800 12px/1.5 "Noto Sans";
+					color: #333;
+				}
+			}
+
+			.totalPrice {
+				td {
+					border-right: none;
+
+					span {
+						color: #333;
+					}
+
+					.orange {
+						color: #ff7d04;
+					}
+
+					.total {
+						font: 700 14px/1 "Noto Sans";
+						color: #ff7d04;
+					}
+
+					.total02 {
+						font: 400 13px/1 "Noto Sans";
+					}
+				}
+
+				.br {
+					.small {
+						font: 400 12px/2.5 "Noto Sans";
+					}
+
+					span {
+						color: #333;
+					}
+				}
+
+				.lastTotalPrice {
+					border-bottom: 2px solid #a7a7a7;
+				}
+			}
+		}
+
+		.buttons {
+			display: flex;
+			gap: 30px;
+			align-items: center;
+			margin-bottom: 80px;
+
+			button {
+				background-color: #ff7d04;
+				color: #fff;
+				border-radius: 5px;
+				border: 1px solid #ff7d04;
+				padding: 10px 50px;
+				cursor: pointer;
+
+				&:first-child {
+					background-color: #fff;
+					color: #333;
+					border: 1px solid #333;
+				}
+			}
+		}
+	}
+}

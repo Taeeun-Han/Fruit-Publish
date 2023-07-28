@@ -53,7 +53,7 @@
 		.search__box {
 			width: 100%;
 			border: 1px solid rgba(0, 0, 0, 0.3);
-			padding: 29px 150px;
+			padding: 30px 150px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -67,9 +67,10 @@
 				justify-content: space-between;
 				align-items: center;
 
+				padding: 0px 15px;
+
 				span {
 					font: 700 16px/1 "Noto Sans";
-					padding-left: 30px;
 				}
 
 				.search__box__buttons {
@@ -157,170 +158,109 @@
 				margin: 10px 0px 20px 0px;
 			}
 
-			.history__contents {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				gap: 15px;
-				margin-bottom: 50px;
-
-				.first,
-				.second,
-				.third {
-					border-radius: 5px;
-					border: 1px solid rgba(0, 0, 0, 0.3);
-					width: 100%;
-					height: 720px;
-				}
-
-				.first {
-					width: 15%;
-
-					ul {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						justify-content: center;
-						width: 100%;
-						height: 100%;
-						gap: 35px;
-
-						li {
-							font: 600 16px/1.3 "Noto Sans";
-							text-align: center;
-
-							.orderNo {
-								font: 400 16px/1.3 "Noto Sans";
-							}
-
-							button {
-								background-color: #252525;
-								color: #fff;
-								border-radius: 50px;
-								padding: 5px 20px;
-								cursor: pointer;
-							}
-						}
-					}
-				}
-
-				.second {
+			.historyContents {
+				ul {
 					display: flex;
 					flex-direction: column;
-					padding: 30px;
-					width: 55%;
+					gap: 30px;
 
-					p {
-						font: 800 16px/1.3 "Noto Sans";
-						margin-bottom: 30px;
-					}
-
-					ul {
+					li {
+						border: 1px solid #a7a7a7;
 						display: flex;
-						flex-direction: column;
+						justify-content: space-between;
+						align-items: center;
+						padding: 30px 50px;
 
-						li {
+						.txt {
 							display: flex;
-							justify-content: space-between;
+							flex-direction: column;
 							align-items: center;
-							margin-bottom: 30px;
-
-							img {
-								border-radius: 10px;
-								width: 100px;
-								height: 100px;
-								margin-right: 20px;
-							}
 
 							span {
-								font: 800 16px/1.7 "Noto Sans";
-							}
+								font: 800 14px/1 "Noto Sans";
+								color: #a7a7a7;
 
-							.product__name {
-								margin-left: -65px;
-							}
-
-							.quant {
-								font: 400 14px/1.7 "Noto Sans";
-								position: relative;
-								top: 15px;
-							}
-						}
-					}
-
-					.delivery__info {
-						border-top: 2px dashed #6c6c6c;
-
-						p {
-							margin-top: 40px;
-						}
-
-						ul {
-							li {
-								display: flex;
-								align-items: center;
-								justify-content: flex-start;
-								gap: 30px;
-								padding-left: 50px;
-
-								.delivery__add,
-								.delivery__note {
-									font: 400 16px/1.3 "Noto Sans";
-									width: 70px;
-									color: #828282;
+								&:first-child {
+									font: 800 14px/2.5 "Noto Sans";
+									color: #333;
 								}
 							}
 						}
-					}
-				}
 
-				.third {
-					width: 30%;
-					display: flex;
-					flex-direction: column;
-					justify-content: space-between;
-					padding: 30px;
-
-					p {
-						font: 800 16px/1.3 "Noto Sans";
-						margin-bottom: 30px;
-					}
-
-					ul {
-						li {
+						.img {
 							display: flex;
-							flex-direction: column;
-							gap: 60px;
+							gap: 20px;
 
-							span {
-								font: 500 16px/1 "Noto Sans";
+							img {
+								width: 100px;
+								height: 100px;
+								cursor: pointer;
+							}
+
+							.img__txt {
 								display: flex;
-								justify-content: space-between;
-								color: #252525;
+								flex-direction: column;
+								justify-content: center;
+								align-items: flex-start;
+
+								p {
+									font: 800 16px/1 "Noto Sans";
+									margin-bottom: 10px;
+								}
+
+								.group {
+									display: flex;
+									gap: 30px;
+
+									span {
+										font: 400 15px/1 "Noto Sans";
+									}
+
+									.orange {
+										color: #ff7d04;
+										font: 800 15px/1 "Noto Sans";
+									}
+								}
+
+								.group2 {
+									color: #a7a7a7;
+									margin-top: 20px;
+
+									p {
+										display: flex;
+										align-items: center;
+										gap: 10px;
+										font: 400 13px/1 "Noto Sans";
+										margin-bottom: 0px;
+										cursor: pointer;
+									}
+
+									span {
+										font-size: 18px;
+									}
+								}
 							}
 						}
-					}
 
-					.total {
-						border-top: 2px dashed #6c6c6c;
-						height: 215px;
-						padding: 40px 0px;
-						display: flex;
-						flex-direction: column;
-
-						span {
-							font: 800 24px/1.3 "Noto Sans";
+						.buttons {
 							display: flex;
-							justify-content: flex-end;
-							color: var(--primary-color);
-						}
+							align-items: center;
+							gap: 20px;
 
-						.total__price {
-							font: 600 16px/1.3 "Noto Sans";
-							display: flex;
-							justify-content: flex-start;
-							margin-bottom: 50px;
-							color: #252525;
+							button {
+								background-color: #ff7d04;
+								color: #fff;
+								border: 1px solid #ff7d04;
+								padding: 10px 20px;
+								font: 400 14px/1 "Noto Sans";
+								cursor: pointer;
+
+								&:first-child {
+									background-color: #fff;
+									color: #ff7d04;
+									border: 1px solid #ff7d04;
+								}
+							}
 						}
 					}
 				}
@@ -331,8 +271,8 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin-top: 10px;
-            margin-bottom: 100px;
+			margin-top: 50px;
+			margin-bottom: 100px;
 
 			a {
 				display: flex;
@@ -370,6 +310,284 @@
 				align-items: center;
 				gap: 20px;
 				text-align: center;
+			}
+		}
+
+		.txt04 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0.7) fixed;
+			z-index: 9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0px;
+				background-color: transparent;
+
+				h4 {
+					width: 500px;
+					background-color: #333;
+					color: #fff;
+					text-align: center;
+					padding: 10px 200px;
+				}
+
+				h5 {
+					width: 500px;
+					background-color: #fff;
+					text-align: center;
+					padding: 35px;
+					font: 500 16px/2 "Nanum Gothic";
+				}
+
+				.buttons {
+					background-color: #fff;
+					width: 500px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 20px;
+					padding: 10px 0px 30px;
+
+					button {
+						background-color: #ff7d04;
+						border: 1px solid #ff7d04;
+						padding: 10px 50px;
+						color: #fff;
+						border-radius: 5px;
+						cursor: pointer;
+						font: 500 14px/1 "Nanum Gothic";
+
+						&:last-child {
+							background-color: #fff;
+							border: 1px solid #333;
+							color: #333;
+						}
+					}
+				}
+			}
+		}
+
+		.txt05 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0.7) fixed;
+			z-index: 9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0px;
+				background-color: transparent;
+
+				h4 {
+					width: 500px;
+					background-color: #333;
+					color: #fff;
+					text-align: center;
+					padding: 10px 200px;
+				}
+
+				h5 {
+					width: 500px;
+					background-color: #fff;
+					text-align: center;
+					padding: 35px;
+					font: 500 16px/2 "Nanum Gothic";
+					height: 0px;
+				}
+
+				.input {
+					background-color: #fff;
+					width: 500px;
+					padding: 30px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: relative;
+
+					input {
+						height: 300px;
+						width: 80%;
+						border-radius: 10px;
+						border: none;
+						background-color: #f0f0f0;
+						padding-left: 10px;
+					}
+
+					span {
+						font: 500 12px/1 "Nanum Gothic";
+						color: #a7a7a7;
+						position: absolute;
+						right: 100px;
+						top: 300px;
+					}
+				}
+
+				.buttons {
+					background-color: #fff;
+					width: 500px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 20px;
+					padding: 10px 0px 30px;
+
+					button {
+						background-color: #ff7d04;
+						border: 1px solid #ff7d04;
+						padding: 10px 50px;
+						color: #fff;
+						border-radius: 5px;
+						cursor: pointer;
+						font: 500 14px/1 "Nanum Gothic";
+
+						&:first-child {
+							background-color: #fff;
+							border: 1px solid #333;
+							color: #333;
+						}
+					}
+				}
+			}
+		}
+
+		.txt06 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0.7) fixed;
+			z-index: 9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0px;
+				background-color: transparent;
+
+				h4 {
+					width: 500px;
+					background-color: #333;
+					color: #fff;
+					text-align: center;
+					padding: 10px 200px;
+				}
+
+				h5 {
+					width: 500px;
+					background-color: #fff;
+					text-align: center;
+					padding: 35px;
+					font: 500 16px/2 "Nanum Gothic";
+					height: 130px;
+				}
+
+
+				.buttons {
+					background-color: #fff;
+					width: 500px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 20px;
+					padding: 10px 0px 30px;
+
+					button {
+						background-color: #ff7d04;
+						border: 1px solid #ff7d04;
+						padding: 10px 50px;
+						color: #fff;
+						border-radius: 5px;
+						cursor: pointer;
+						font: 500 14px/1 "Nanum Gothic";
+
+						&:first-child {
+							background-color: #fff;
+							border: 1px solid #333;
+							color: #333;
+						}
+					}
+				}
+			}
+		}
+
+		.txt07 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0.7) fixed;
+			z-index: 9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0px;
+				background-color: transparent;
+
+				h4 {
+					width: 500px;
+					background-color: #333;
+					color: #fff;
+					text-align: center;
+					padding: 10px 200px;
+				}
+
+				h5 {
+					width: 500px;
+					background-color: #fff;
+					text-align: center;
+					padding: 35px;
+					font: 500 16px/2 "Nanum Gothic";
+					height: 100px;
+				}
+
+
+				.buttons {
+					background-color: #fff;
+					width: 500px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 20px;
+					padding: 10px 0px 30px;
+
+					button {
+						background-color: #ff7d04;
+						border: 1px solid #ff7d04;
+						padding: 10px 50px;
+						color: #fff;
+						border-radius: 5px;
+						cursor: pointer;
+						font: 500 14px/1 "Nanum Gothic";
+					}
+				}
 			}
 		}
 	}

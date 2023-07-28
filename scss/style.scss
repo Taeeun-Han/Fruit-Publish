@@ -9,6 +9,8 @@
 @import "mypageDelivery.scss";
 @import "mypageEdit.scss";
 @import "mypageEdit02.scss";
+@import "cart.scss";
+@import "payment.scss";
 
 :root {
 	--primary-color: #ff7d04;
@@ -548,9 +550,10 @@ header {
 
 		h1 {
 			float: left;
+			border: 1px solid red;
 
 			img {
-				width: 30%;
+				width: 80%;
 			}
 		}
 
